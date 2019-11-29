@@ -1,11 +1,11 @@
-import java.lang.*;
-class welcome{
-	
-	public static void main (String Arg[])
-	{
-		System.out.println("welcome to java");
-	}
-}
+pipeline {
+   agent any
 
-	
-		
+   stages {
+      stage('Hello') {
+         steps {
+            echo 'Hello World'
+         }
+      }
+   }
+}
